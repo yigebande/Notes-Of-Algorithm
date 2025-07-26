@@ -22,6 +22,7 @@ head: [1, 2, 3, 4, 5]
 3. `fast`超前移动完毕后，`fast`和`slow`同步移动
 
     ![](images/mov1.svg)
+    
     ![](images/mov2.svg)
 
 4. 当`fast`刚好移动到最后一个节点，也就是`fast->next == nullptr`时，
