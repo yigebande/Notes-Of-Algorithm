@@ -12,18 +12,22 @@ head: [1, 2, 3, 4, 5]
 ```
 
 1. 刚开始的`fast`和`slow`都指向虚拟头节点
-![](images/initial.svg)
+
+    ![](images/initial.svg)
 
 2. 那么，`fast`向右移动`n = 2`位
-![](images/fastAhead.svg)
+
+    ![](images/fastAhead.svg)
 
 3. `fast`超前移动完毕后，`fast`和`slow`同步移动
-![](images/mov1.svg)
-![](images/mov2.svg)
+
+    ![](images/mov1.svg)
+    ![](images/mov2.svg)
 
 4. 当`fast`刚好移动到最后一个节点，也就是`fast->next == nullptr`时，
    `slow->next`刚好是待删除的节点
-![](images/mov3.svg)
+
+    ![](images/mov3.svg)
 
 这里引入虚拟头节点能够完美解决删除的节点是`head`的问题
 
